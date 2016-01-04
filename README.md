@@ -12,7 +12,7 @@ Untested on non-IRCu based networks.
 
 ```Javascript
 "topic-announce": {
-    "announcement": "To see previous tells, visit our website at example.com"
+    "message": "To see previous tells, visit our website at example.com"
 }
 ```
 
