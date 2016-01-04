@@ -1,0 +1,21 @@
+{
+  "name": "tennu-topic-announce",
+  "version": "1.0.0",
+  "description": "Emits a response when the topic is changed.",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LordWingZero/tennu-topic-announce"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "author": "Victorio Berra",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
+  }
+}
