@@ -29,17 +29,15 @@ describe('topic-announce', function() {
     describe('configuration', function() {
 
         describe('bad configuration', function() {
-
+            
             config = {};
-
             mockClient._logger.warn = function(warning) {
                 warning.should.equal('tennu-topic-announce: is missing some or all of its configuration');
             };
-
+            
             it('Should log a warning about the config using client.warning', function() {
                 var plugin = require('../plugin').init(mockClient);
             });
-
         });
 
         describe('good configuration', function() {
@@ -49,23 +47,16 @@ describe('topic-announce', function() {
                     "message": "To see previous tells, visit our website at example.com"
                 }
             };
-
             mockClient._logger.warn = function(warning) {
                 should.fail();
             };
             
             it('Should load the configurations response when properly set', function() {
-                
                 var plugin = require('../plugin').init(mockClient);
-                
                 plugin.handlers.topic(IRCTopicMessage).should.deepEqual({
                     "message": "To see previous tells, visit our website at example.com"
                 });
-
             });
-
         });
-
     });
-
 });
