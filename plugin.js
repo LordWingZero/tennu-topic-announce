@@ -5,7 +5,7 @@ var TennuTopicAnnounce = {
         var topicConfig = client.config("topic-announce");
 
         if (!topicConfig) {
-            client._logger.warn("tennu-topic-announce: is missing some or all of its configuration.");
+            throw new Error("tennu-topic-announce: is missing some or all of its configuration.");
         }
 
         return {
