@@ -1,6 +1,6 @@
 {
   "name": "tennu-topic-announce",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Emits a response when the topic is changed.",
   "main": "plugin.js",
   "repository": {
